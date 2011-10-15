@@ -1,4 +1,4 @@
-class Hours {
+class Seconds {
 
   float xPos;
   float yPos;
@@ -7,7 +7,7 @@ class Hours {
   float loch;
   float locv;
 
-  Hours(int _xPos, int _yPos, int _cWidth, int _cHeight) {
+  Seconds(int _xPos, int _yPos, int _cWidth, int _cHeight) {
     xPos = _xPos;
     yPos = _yPos;
     cWidth = _cWidth;
@@ -33,8 +33,8 @@ class Hours {
       if (x == handLength) { 
         xPos = loch;
         yPos = locv;
-        cWidth = dotRadius + 18;
-        cHeight = dotRadius + 18;
+        cWidth = dotRadius;
+        cHeight = dotRadius;
         //ellipse(loch, locv, dotRadius + 18, dotRadius + 18);
       }
       // calculate a new radius for the next dot further out:
